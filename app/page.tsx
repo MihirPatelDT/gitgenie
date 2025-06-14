@@ -1,13 +1,7 @@
-import { Button } from "@/components/ui/button"
-import React from "react"
+import { redirect } from "next/navigation"
 
 const page = () => {
-  return (
-    <>
-      <div className="text-red-500">Hello World</div>
-      <Button>Click me</Button>
-    </>
-  )
+  return redirect("/dashboard")
 }
 
 export default page
